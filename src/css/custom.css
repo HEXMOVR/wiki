@@ -1,0 +1,213 @@
+:root{--ifm-color-primary:#1f6feb;--ifm-color-primary-dark:#185abc;--ifm-color-primary-darker:#124a9f;--ifm-color-primary-light:#4c8ff7;--ifm-color-primary-lighter:#75aaff}
+.navbar{box-shadow:0 1px 8px rgba(0,0,0,.08)}
+.navbar__title{font-weight:700;letter-spacing:.02em}
+.theme-doc-sidebar-container{border-right:1px solid var(--ifm-toc-border-color)}
+.theme-doc-sidebar-menu{font-size:14px}.menu__link{border-radius:6px}.menu__link--active{font-weight:600}
+.theme-doc-markdown{max-width:1050px}.theme-doc-markdown img{max-width:100%;height:auto}.theme-doc-markdown table{display:table;width:100%;overflow:visible}.theme-doc-markdown td,.theme-doc-markdown th{word-break:break-word}.theme-doc-markdown h1{font-size:2rem}.theme-doc-markdown h2{margin-top:2rem;padding-bottom:.45rem;border-bottom:1px solid var(--ifm-toc-border-color)}
+@media(max-width:996px){.theme-doc-markdown{max-width:none}}
+@media(max-width:600px){.navbar__title{font-size:15px}.theme-doc-markdown{font-size:15px}.theme-doc-markdown h1{font-size:1.65rem}.theme-doc-markdown h2{font-size:1.35rem}.theme-doc-markdown table{display:block;overflow-x:auto;white-space:normal}.theme-doc-markdown img{max-width:100%!important}}
+
+
+/* Product-document HTML style compatibility classes. */
+
+.hex-style-001 {
+  page-break-after: always;
+}
+
+.hex-style-002 {
+  text-align: left;
+}
+
+.hex-style-003 {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+}
+
+.hex-style-004 {
+  background-color: #666666;
+  color: white;
+}
+
+.hex-style-005 {
+  border: 1px solid #000;
+  padding: 4px 6px;
+  font-weight: bold;
+}
+
+.hex-style-006 {
+  background-color: #ffffff;
+  height: 20px;
+}
+
+.hex-style-007 {
+  border: 1px solid #000;
+  padding: 3px 6px;
+}
+
+.hex-style-008 {
+  background-color: #e6e6e6;
+  height: 20px;
+}
+
+.hex-style-009 {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 12px;
+}
+
+.hex-style-010 {
+  background-color: #ffffff;
+  color: black;
+}
+
+.hex-style-011 {
+  border: 1px solid #000;
+  padding: 4px 6px;
+  width: 60px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.hex-style-012 {
+  border: 1px solid #000;
+  padding: 4px 6px;
+  width: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hex-style-013 {
+  background-color: #e0dede;
+  color: black;
+}
+
+.hex-style-014 {
+  border: 1px solid #000;
+  padding: 4px 6px;
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hex-style-015 {
+  border: 1px solid #000;
+  padding: 4px 6px;
+  width: 90px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.hex-style-016 {
+  background-color: #ffffff;
+  color: black;
+  height: 20px;
+}
+
+.hex-style-017 {
+  border: 1px solid #000;
+  padding: 3px 6px;
+}
+
+.hex-style-018 {
+  border: 1px solid #000;
+  padding: 3px 6px;
+}
+
+.hex-style-019 {
+  border: 1px solid #000;
+  padding: 3px 6px;
+}
+
+.hex-style-020 {
+  margin-left: 2em;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.hex-style-021 {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 8px 0 12px 2em;
+}
+
+.hex-style-022 {
+  width: 40%;
+  text-align: center;
+}
+
+.hex-style-023 {
+  width: 100%;
+}
+
+.hex-style-024 {
+  text-indent: 2em;
+  margin: 6px 0;
+}
+
+.hex-style-025 {
+  margin-left: 2em;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+.hex-style-026 {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 12px;
+  table-layout: auto;
+}
+
+.hex-style-027 {
+  border: 1px solid #000;
+  padding: 4px 6px;
+  text-align: center;
+  font-weight: bold;
+  width: 1% !important;
+  min-width: 6em;
+  white-space: nowrap !important;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.hex-style-028 {
+  border: 1px solid #000;
+  padding: 4px 6px;
+  text-align: center;
+  font-weight: bold;
+  width: auto !important;
+  white-space: normal;
+}
+
+.hex-style-029 {
+  border: 1px solid #000;
+  padding: 3px 6px;
+  width: 1% !important;
+  min-width: 6em;
+  white-space: nowrap !important;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+.hex-style-030 {
+  border: 1px solid #000;
+  padding: 3px 6px;
+  width: auto !important;
+  white-space: normal;
+}
+
+.hex-style-031 {
+  text-indent: 2em;
+  margin: 6px 0;
+  color: red;
+  font-weight: bold;
+}
+
+.hex-style-032 {
+  color: black;
+}
