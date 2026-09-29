@@ -1,12 +1,232 @@
-:root{--ifm-color-primary:#1f6feb;--ifm-color-primary-dark:#185abc;--ifm-color-primary-darker:#124a9f;--ifm-color-primary-light:#4c8ff7;--ifm-color-primary-lighter:#75aaff}
-.navbar{box-shadow:0 1px 8px rgba(0,0,0,.08)}
-.navbar__title{font-weight:700;letter-spacing:.02em}
-.theme-doc-sidebar-container{border-right:1px solid var(--ifm-toc-border-color)}
-.theme-doc-sidebar-menu{font-size:14px}.menu__link{border-radius:6px}.menu__link--active{font-weight:600}
-.theme-doc-markdown{max-width:1050px}.theme-doc-markdown img{max-width:100%;height:auto}.theme-doc-markdown table{display:table;width:100%;overflow:visible}.theme-doc-markdown td,.theme-doc-markdown th{word-break:break-word}.theme-doc-markdown h1{font-size:2rem}.theme-doc-markdown h2{margin-top:2rem;padding-bottom:.45rem;border-bottom:1px solid var(--ifm-toc-border-color)}
-@media(max-width:996px){.theme-doc-markdown{max-width:none}}
-@media(max-width:600px){.navbar__title{font-size:15px}.theme-doc-markdown{font-size:15px}.theme-doc-markdown h1{font-size:1.65rem}.theme-doc-markdown h2{font-size:1.35rem}.theme-doc-markdown table{display:block;overflow-x:auto;white-space:normal}.theme-doc-markdown img{max-width:100%!important}}
+/* HEXMOVR engineering-document theme: plain, compact, documentation-first. */
+:root {
+  --ifm-color-primary: #1769aa;
+  --ifm-color-primary-dark: #145c94;
+  --ifm-color-primary-darker: #124f80;
+  --ifm-color-primary-light: #2d7fbb;
+  --ifm-color-primary-lighter: #4b92c7;
+  --ifm-navbar-height: 52px;
+  --ifm-menu-link-padding-horizontal: 10px;
+  --ifm-menu-link-padding-vertical: 6px;
+  --ifm-code-font-size: 90%;
+}
 
+html, body {
+  font-size: 15px;
+}
+
+.navbar {
+  height: var(--ifm-navbar-height);
+  padding: 0 18px;
+  border-bottom: 1px solid #d9dee5;
+  box-shadow: none;
+}
+
+.navbar__brand {
+  margin-right: 24px;
+  gap: 10px;
+}
+
+.navbar__logo {
+  width: 126px;
+  height: auto;
+  max-height: 22px;
+  object-fit: contain;
+}
+
+.navbar__title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  letter-spacing: 0;
+}
+
+.navbar__link {
+  font-size: 14px;
+  color: #333;
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary);
+}
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid #d9dee5;
+  background: #fafbfc;
+}
+
+.theme-doc-sidebar-menu {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.menu__list-item-collapsible,
+.menu__link {
+  border-radius: 2px;
+}
+
+.menu__link {
+  color: #333;
+  line-height: 1.45;
+}
+
+.menu__link:hover {
+  background: #eef3f7;
+}
+
+.menu__link--active {
+  color: #145c94;
+  font-weight: 600;
+  background: #e8f0f7;
+}
+
+.menu__caret:before {
+  transform: scale(.8);
+}
+
+.theme-doc-markdown {
+  max-width: 920px;
+  padding-bottom: 40px;
+}
+
+.theme-doc-markdown h1 {
+  margin-bottom: 18px;
+  font-size: 28px;
+  line-height: 1.35;
+  font-weight: 600;
+}
+
+.theme-doc-markdown h2 {
+  margin-top: 30px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #d9dee5;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.theme-doc-markdown h3 {
+  margin-top: 24px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.theme-doc-markdown p,
+.theme-doc-markdown li {
+  line-height: 1.75;
+}
+
+.theme-doc-markdown a {
+  text-decoration: none;
+}
+
+.theme-doc-markdown a:hover {
+  text-decoration: underline;
+}
+
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+  overflow: visible;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.theme-doc-markdown th,
+.theme-doc-markdown td {
+  border: 1px solid #cfd6de;
+  padding: 7px 9px;
+  word-break: break-word;
+}
+
+.theme-doc-markdown th {
+  background: #f3f5f7;
+  font-weight: 600;
+}
+
+.theme-doc-markdown img {
+  max-width: 100%;
+  height: auto;
+}
+
+.theme-doc-footer {
+  border-top: 1px solid #d9dee5;
+}
+
+.footer {
+  background: #fff;
+  color: #666;
+  padding: 18px 0;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #555;
+}
+
+.theme-doc-toc-desktop {
+  font-size: 13px;
+}
+
+.table-of-contents__link {
+  color: #666;
+}
+
+.table-of-contents__link--active {
+  color: #1769aa;
+  font-weight: 600;
+}
+
+.pagination-nav {
+  margin-top: 32px;
+}
+
+.pagination-nav__link {
+  border: 1px solid #d9dee5;
+  border-radius: 2px;
+  box-shadow: none;
+}
+
+.pagination-nav__link:hover {
+  border-color: #b8c3ce;
+}
+
+@media (max-width: 996px) {
+  .theme-doc-markdown {
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar__title {
+    font-size: 15px;
+  }
+
+  .theme-doc-markdown {
+    font-size: 15px;
+  }
+
+  .theme-doc-markdown h1 {
+    font-size: 24px;
+  }
+
+  .theme-doc-markdown h2 {
+    font-size: 19px;
+  }
+
+  .theme-doc-markdown table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+
+  .theme-doc-markdown img {
+    max-width: 100% !important;
+  }
+}
 
 /* Product-document HTML style compatibility classes. */
 
