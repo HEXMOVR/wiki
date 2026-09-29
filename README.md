@@ -22,7 +22,7 @@ GitHub Pages
 
 - Owner: `HEXMOVR`
 - Repository: `wiki`
-- GitHub Pages: `https://hexmovr.github.io/wiki/`
+- GitHub Pages 自定义域名: `https://wiki.hexmovr.com/`
 
 ## 第一次部署
 

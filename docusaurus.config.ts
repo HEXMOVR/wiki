@@ -6,9 +6,9 @@ const config: Config = {
   tagline: 'HEXMOVR 产品知识库',
   favicon: 'img/favicon.svg',
 
-  // GitHub Pages：纯静态网站，最终只托管 build/ 中生成的 HTML/CSS/JS。
-  url: 'https://hexmovr.github.io',
-  baseUrl: '/wiki/',
+  // GitHub Pages 自定义域名：站点部署在 wiki.hexmovr.com 根路径。
+  url: 'https://wiki.hexmovr.com',
+  baseUrl: '/',
   organizationName: 'HEXMOVR',
   projectName: 'wiki',
 
